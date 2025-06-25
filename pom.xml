@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.gigateway</groupId>
-	<artifactId>Gi-Gateway</artifactId>
+	<artifactId>vims-gateway</artifactId>
 	<version>ROOT</version>
 	<name>security</name>
 	<description>API Gateway</description>
@@ -42,22 +42,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-security</artifactId>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-web</artifactId>-->
+<!--		</dependency>-->
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-devtools</artifactId>
@@ -68,16 +64,21 @@
 			<artifactId>thymeleaf-extras-springsecurity6</artifactId>
 		</dependency>
 <!-- data base -->
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc8</artifactId>
-			<version>19.8.0.0</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.postgresql</groupId>-->
+<!--			<artifactId>postgresql</artifactId>-->
+<!--			<scope>runtime</scope>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.oracle.database.jdbc</groupId>-->
+<!--			<artifactId>ojdbc8</artifactId>-->
+<!--			<version>19.8.0.0</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.mybatis.spring.boot</groupId>-->
+<!--			<artifactId>mybatis-spring-boot-starter</artifactId>-->
+<!--			<version>3.0.3</version>-->
+<!--		</dependency>-->
 <!-- data base -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -121,11 +122,6 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>3.0.3</version>
-		</dependency>
 		<!-- Spring Boot Starter for Log4j2 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -163,11 +159,15 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
-            <version>3.2.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.data</groupId>-->
+<!--            <artifactId>spring-data-jpa</artifactId>-->
+<!--            <version>3.2.0</version>-->
+<!--        </dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+<!--		</dependency>-->
 		<!-- Apache Poi (for Excel download)-->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -178,10 +178,6 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>4.1.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
