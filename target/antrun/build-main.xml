@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <delete file="/Users/ikyoungtae/Documents/coding/Gi-Gateway/target/classes/application.properties" />
+    <delete file="/Users/ikyoungtae/Documents/coding/Gi-Gateway/target/classes/application.yml" />
+    <copy file="/Users/ikyoungtae/Documents/coding/Gi-Gateway/target/application.prod.properties" tofile="/Users/ikyoungtae/Documents/coding/Gi-Gateway/target/classes/application.properties" />
+    <copy file="/Users/ikyoungtae/Documents/coding/Gi-Gateway/target/application.prod.yml" tofile="/Users/ikyoungtae/Documents/coding/Gi-Gateway/target/classes/application.yml" />
+    <delete file="/Users/ikyoungtae/Documents/coding/Gi-Gateway/target/application.prod.properties" />
+    <delete file="/Users/ikyoungtae/Documents/coding/Gi-Gateway/target/application.prod.yml" />
+    <delete file="/Users/ikyoungtae/Documents/coding/Gi-Gateway/target/classes/application.prod.properties" />
+    <delete file="/Users/ikyoungtae/Documents/coding/Gi-Gateway/target/classes/application.prod.yml" />
+  </target>
+</project>

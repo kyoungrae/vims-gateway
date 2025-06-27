@@ -52,7 +52,8 @@ spring:
 #            - Path=/api/register/**
 #          filters:
 #            - StripPrefix=1
-#        # 시스템관리 서비스 라우팅
+
+#        # NOTE: 시스템관리 서비스 라우팅 (cms)
         - id: vims-management_route
           uri: http://localhost:8083 # 포트 번호가 누락되어 8083으로 되어 있습니다. 올바른 포트 번호로 수정하세요.
           predicates:
