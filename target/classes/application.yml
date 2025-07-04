@@ -36,7 +36,7 @@ spring:
         - id: vims-login_api_route
           uri: http://localhost:8081
           predicates:
-            - Path=/login/**, /api/v1/auth/logout
+            - Path=/login/**, /api/v1/auth/**
           filters:
             - AddRequestHeader=X-Source, Gateway
             - name: RewriteLocationResponseHeader
